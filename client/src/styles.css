@@ -1,0 +1,33 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f4f6f8; color: #222; }
+.header { background: #d35400; color: #fff; padding: 12px 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+.header h1 { margin: 0; font-size: 22px; }
+.header nav button { background: transparent; color: #fff; border: 1px solid #fff; margin-left: 8px; }
+.header nav button.active { background: #fff; color: #d35400; }
+.container { max-width: 1000px; margin: 20px auto; padding: 0 16px; }
+.grid { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; align-items: start; }
+@media (max-width: 760px) { .grid { grid-template-columns: 1fr; } }
+.card { background: #fff; border-radius: 8px; padding: 12px 16px; margin-bottom: 10px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+.row { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin: 4px 0; }
+.inline { display: flex; gap: 8px; margin: 10px 0; flex-wrap: wrap; }
+.muted { color: #777; font-size: 14px; }
+.cat { margin: 18px 0 8px; color: #d35400; }
+button { padding: 8px 14px; border: 1px solid #ccc; background: #fff; border-radius: 6px; cursor: pointer; text-transform: capitalize; }
+button.primary { background: #d35400; color: #fff; border-color: #d35400; }
+button.danger { background: #c0392b; color: #fff; border-color: #c0392b; }
+button.active-tab { background: #333; color: #fff; }
+.qty { display: flex; align-items: center; gap: 10px; }
+.qty button { padding: 4px 10px; }
+input, select { width: 100%; padding: 9px; margin-top: 8px; border: 1px solid #ccc; border-radius: 6px; }
+.inline input, .inline select { width: auto; margin-top: 0; }
+.cart button.primary { width: 100%; margin-top: 10px; }
+.error { color: #c0392b; }
+.success { color: #27ae60; font-weight: bold; }
+.login { max-width: 320px; margin: 40px auto; }
+.login button { width: 100%; margin-top: 10px; }
+.badge { padding: 3px 10px; border-radius: 12px; font-size: 13px; color: #fff; text-transform: capitalize; }
+.badge.pending { background: #f39c12; }
+.badge.preparing { background: #2980b9; }
+.badge.completed { background: #27ae60; }
+.badge.cancelled { background: #7f8c8d; }
+.actions { margin-bottom: 0; }
